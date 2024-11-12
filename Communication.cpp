@@ -415,7 +415,6 @@ void Com::printF(FSTRINGPARAM(text), uint32_t value)
     printNumber(value);
 } // printF
 
-
 void Com::printFLN(FSTRINGPARAM(text), int value)
 {
     printF(text);
@@ -504,7 +503,7 @@ void Com::printArrayFLN(FSTRINGPARAM(text), long* arr, uint8_t n)
 {
     printF(text);
     for (uint8_t i = 0; i < n; i++)
-        printF(Com::tSpace, arr[i]);
+        printF(Com::tSpace, (uint32_t)arr[i]);
     println();
 } // printArrayFLN
 

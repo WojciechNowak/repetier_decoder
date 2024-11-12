@@ -871,11 +871,11 @@ void GCode::printCommand()
     }
     if (hasS())
     {
-        Com::printF(Com::tS, S);
+        Com::printF(Com::tS, (uint32_t)S);
     }
     if (hasP())
     {
-        Com::printF(Com::tP, P);
+        Com::printF(Com::tP, (uint32_t)P);
     }
     if (hasI())
     {
